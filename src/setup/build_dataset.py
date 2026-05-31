@@ -62,15 +62,10 @@ def main():
     print("  FoodLabelSafety — Knowledge Base Builder")
     print("=" * 60)
     
-    if not TAXONOMY_FILE.exists():
-        print(f"\n[X] Taxonomy file not found: {TAXONOMY_FILE}")
-        print("   Run: powershell scripts/download_data.ps1")
-        sys.exit(1)
-    
-    if not CSV_FILE.exists():
-        print(f"\n[X] CSV file not found: {CSV_FILE}")
-        print("   Run: powershell scripts/download_data.ps1")
-        sys.exit(1)
+    if not TAXONOMY_FILE.exists() or not CSV_FILE.exists():
+        print("\n[!] Raw dataset files missing. Downloading automatically...")
+        from src.setup.download_data import download_all
+        download_all()
     
     # Quick Ollama health check
     print("\n[1/5] Checking Ollama models...")

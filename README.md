@@ -97,3 +97,11 @@ python app.py --text "Are E102 and E407 safe?"
    - This project can be upgraded to work with a better text extraction model.
    - Can be expanded into a full-fledged application with a web-interface. 
    - Can adapt the Knowledge Base to completely fit to Indian needs. For example, the veg_status is mostly ambigious as most of the additives are created using non-vegetarian sources outside India due to which veg_status is mostly logged as "ambigious" by the model. 
+
+---
+
+## Credits & Acknowledgements
+
+This project would not be possible without the open-source data provided by the following initiatives:
+- **[Open Food Facts](https://world.openfoodfacts.org/)**: For providing the incredibly detailed, community-driven global taxonomy of food additives (`additives.txt`).
+- **[Suhas Dissa's FSSAI Additives Dataset](https://github.com/suhasdissa)**: For providing the base CSV mapping of E-numbers to their FSSAI regulatory status in India.
