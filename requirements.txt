@@ -1,0 +1,6 @@
+# Dependencies for the dataset builder script only
+ollama>=0.4.0
+chromadb>=0.5.0
+opencv-python
+easyocr
+pydantic

@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+
+# Application Data
+data/chroma_dataset_builder/
+data/raw/
+
+data/additives/enrichment_progress.jsonl
+
+# Models / Weights
+*.pt
+*.pth
+*.onnx
